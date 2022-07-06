@@ -12,4 +12,8 @@ export class AppComponent {
   }
 
   title = 'angular-course';
+
+  public onLogoClicked() {
+    alert('Hello World');
+  }
 }
