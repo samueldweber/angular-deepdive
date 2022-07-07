@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,11 @@ export class AppComponent {
 
   title = 'angular-course';
 
-  public onLogoClicked() {
-    alert('Hello World');
+  public onKeyUp(newTitle: string) {
+    this.data.title = newTitle;
+  }
+
+  public onLogoClicked(newTitle: string) {
+    alert('Logo clicked');
   }
 }
